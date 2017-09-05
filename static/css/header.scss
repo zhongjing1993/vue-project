@@ -2,10 +2,46 @@ header{
   width:100%;
   height:50px;
   background:#635F5F;
-  >div{
+  .header-com{
     width:1200px;
-    height:100%;
+    height:30px;
     margin:0 auto;
-    background:red;
+    padding:10px 0;
+    .left{
+        float: left;
+        font-size:14px;
+        color:#fff;
+        img{
+            float: left;
+        }
+        .left-content{
+            float: left;
+            margin-left:10px;
+            line-height:30px;
+            .login{
+
+            }
+            .long-string{
+                margin:0 6px;
+            }
+            .register{
+                
+            }
+        }
+        
+    }
+    .right{
+        float: right;
+        ul{
+            li{
+                float: left;
+                line-height:30px;
+                p{
+                    float: left;
+                    padding:0 20px;
+                }   
+            }
+        }
+    }
   }
 }

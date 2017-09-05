@@ -3,6 +3,9 @@
   ### 运行方式
   1. 在根目录下 npm install  下载依赖
   2. npm run dev
+  或者：
+  1.build.sh文件直接双击进行打包
+  2.run.sh文件直接双击运行
 
   ## 整体项目采用  vue +  vue-router +  vuex （传说中的vue 全家桶 ），构建工具使用尤大大推出的vue-cli
 

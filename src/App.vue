@@ -6,7 +6,9 @@ app.vue是我们的主组件，所有页面都是在App.vue下进行切换的，
   <div id="app">
     <com-header></com-header>
     <router-view></router-view>
-    <com-data></com-data>
+    <com-index></com-index>
+    <!-- 这个是引用element文件 -->
+    <!-- <com-data></com-data> -->
     <com-footer></com-footer>
   </div>
 </template>
@@ -14,15 +16,25 @@ app.vue是我们的主组件，所有页面都是在App.vue下进行切换的，
 <script>
   import Header from './components/header.vue'
   import Footer from './components/footer.vue'
-  import datapaker from './components/datapacker.vue'
-export default {
-    name: 'app',
-    components: {
-      comHeader: Header,
-      comFooter: Footer,
-      comData:datapaker
-    }
-}
+  // 这个是引用element文件
+  // import datapaker from './components/datapacker.vue'
+  import index from './page/home/index.vue'
+  export default {
+      data () {
+        return{
+
+        }
+      },
+      components: {
+            comHeader: Header,
+            comFooter: Footer,
+            // 这个是引用element文件
+            // comData:datapaker,
+            comIndex:index,
+      }
+      
+  }
+      
 </script>
 
 <style>
@@ -31,13 +43,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  font-size: 14px;
 }
 * {
   padding:0;
   margin:0;
   list-style:none;
+  font-family: "微软雅黑";
 }
 a {
   text-decoration:none;

@@ -9,7 +9,6 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 
 Vue.config.productionTip = false
-/* eslint-disable no-new */
 //  创建一个app实例，并且挂载到选择符#app匹配的元素上，在根目录的HTML中
 
 Vue.use(ElementUI)
@@ -18,4 +17,6 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
+  //render: h => h(app)
 })
+//.$mount("#app");
